@@ -1,9 +1,6 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
-import { FaRegUser } from "react-icons/fa6";
-import { CiBellOn } from "react-icons/ci";
 import { useSearch } from "../context/searchContext";
-import { useData } from "../context/dataContext";
 
 const Navbar = () => {
   const { searchInput, setSearchInput, handleSearch } = useSearch();
@@ -27,17 +24,6 @@ const Navbar = () => {
           onClick={() => handleSearch()}
         />
       </div>
-      {/* {
-        userData===""
-      } */}
-      {/* <div className='flex gap-6 mr-5'>
-        <div className='bg-backgroundColor h-[30px] w-[30px] rounded-[50%] flex items-center justify-center'>
-          <FaRegUser color='white' fontWeight='bold' />
-        </div>
-        <div className='bg-backgroundColor h-[30px] w-[30px] rounded-[50%] flex items-center justify-center'>
-          <CiBellOn color='white' fontWeight='bold' />
-        </div>
-      </div> */}
     </div>
   );
 };
